@@ -7,6 +7,12 @@ function shuffle(a){
   return a;
 }
 
+let node = document.createElement("h4");
+let textnode = document.createTextNode("(Click title to sort class)");
+node.appendChild(textnode);
+let element = document.getElementsByTagName("div")[0];
+element.insertBefore(node, element.childNodes[2])
+
 document.getElementsByTagName("h1")[0].addEventListener("click", function(){
 
   let wdi = ["alyssa", "anusone", "ara", "clifton", "dara", "david f", "david m",  "erik",  "jesse", "julie", "madlyn", "matthew", "mason", "neil", "patrick", "rafael", "sandy"];
@@ -31,8 +37,10 @@ while(wdi.length>0){
       }
     }
      document.getElementById(pod).innerHTML = pods[pod].join(", ");
-  }
+
 }
+}
+
 });
 
 // console.log(`pod 1: ${pods.one} pod 2: ${pods.two} pod 3: ${pods.three} pod 4: ${pods.four} `)
