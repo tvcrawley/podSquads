@@ -3,15 +3,20 @@ body{
   text-transform: capitalize;
   color: purple;
   text-align: center;
-  padding-top: 3%;
+  /*padding-top: 3%;*/
 }
 
-h1{
+header{
   border-bottom: solid purple;
+  padding: 2%;
 }
 
 h1:hover{
-  cursor: pointer;  
+  cursor: pointer;
+}
+
+h1, h4{
+  margin: 0;
 }
 
 .squad{

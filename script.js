@@ -10,8 +10,9 @@ function shuffle(a){
 let node = document.createElement("h4");
 let textnode = document.createTextNode("(Click title to sort class)");
 node.appendChild(textnode);
-let element = document.getElementsByTagName("div")[0];
-element.insertBefore(node, element.childNodes[2])
+let element = document.getElementsByTagName("header")[0];
+element.appendChild(node);
+// element.insertBefore(node, element.childNodes[2])
 
 document.getElementsByTagName("h1")[0].addEventListener("click", function(){
 
