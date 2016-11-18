@@ -1,3 +1,26 @@
 body{
-  background-color: lavender;
+  background-color: magenta;
+  text-transform: capitalize;
+  color: purple;
+  text-align: center;
+  padding-top: 3%;
+}
+
+h1{
+  border-bottom: solid purple;
+}
+
+.squad{
+  font-size: 22px;
+}
+
+section{
+  padding: 3px;
+}
+
+section:hover{
+  color: white;
+  border: solid white;
+  border-radius: 20%;
+  padding: 0px;
 }
