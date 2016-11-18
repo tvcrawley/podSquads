@@ -1,6 +1,3 @@
-
-let wdi = ["alyassa", "anusone", "ara", "cliff", "dara", "david f", "david m",  "erik",  "jesse", "julie", "madlyn", "matt", "mason", "neil", "patrick", "rafael", "sandy"];
-
 function shuffle(a){
   for(let i=a.length; i>0; i--){
     let j = Math.floor(Math.random()*i);
@@ -10,15 +7,18 @@ function shuffle(a){
   return a;
 }
 
-wdi = shuffle(wdi);
+document.getElementsByTagName("h1")[0].addEventListener("click", function(){
 
-let pods = {
-  one: [],
-  two: [],
-  three: [],
-  four: []
-};
+  let wdi = ["alyssa", "anusone", "ara", "clifton", "dara", "david f", "david m",  "erik",  "jesse", "julie", "madlyn", "matthew", "mason", "neil", "patrick", "rafael", "sandy"];
 
+  wdi = shuffle(wdi);
+
+  let pods = {
+    one: [],
+    two: [],
+    three: [],
+    four: []
+  };
 
 while(wdi.length>0){
   for(let pod in pods){
@@ -33,5 +33,6 @@ while(wdi.length>0){
      document.getElementById(pod).innerHTML = pods[pod].join(", ");
   }
 }
+});
 
-console.log(`pod 1: ${pods.one} pod 2: ${pods.two} pod 3: ${pods.three} pod 4: ${pods.four} `)
+// console.log(`pod 1: ${pods.one} pod 2: ${pods.two} pod 3: ${pods.three} pod 4: ${pods.four} `)
