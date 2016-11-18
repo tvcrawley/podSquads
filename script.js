@@ -30,6 +30,7 @@ while(wdi.length>0){
         pods[pod].pop();
       }
     }
+     document.getElementById(pod).innerHTML = pods[pod].join(", ");
   }
 }
 
