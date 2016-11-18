@@ -12,11 +12,6 @@ function shuffle(a){
 
 wdi = shuffle(wdi);
 
-let pod1 =[];
-let pod2 = [];
-let pod3 = [];
-let pod4 = [];
-
 let pods = {
   one: [],
   two: [],
@@ -25,16 +20,17 @@ let pods = {
 };
 
 
-  // console.log(student);
-  while(wdi.length>0){
+while(wdi.length>0){
   for(let pod in pods){
+
     if(pods[pod].length <5){
-    pods[pod].push(wdi.shift());
-    // console.log(pod + " " + pods[pod]);
-    // console.log(pods[pod].findIndex(4))
-    // if(pods[pod][4] === "undefined"){
-    //   pods[pod].pop();
-    // }
+      pods[pod].push(wdi.shift());
+
+      if(pods[pod].lastIndexOf()> 0){
+        pods[pod].pop();
+      }
+    }
   }
-  }
-  }
+}
+
+console.log(`pod 1: ${pods.one} pod 2: ${pods.two} pod 3: ${pods.three} pod 4: ${pods.four} `)
