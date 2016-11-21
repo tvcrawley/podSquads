@@ -1,35 +1,36 @@
-body{
-  background-color: magenta;
-  text-transform: capitalize;
-  color: purple;
-  text-align: center;
-  /*padding-top: 3%;*/
+body {
+    background-color: #ff4aff;
+    text-transform: capitalize;
+    color: #f5f5f5;
+    text-align: center;
+    /*padding-top: 3%;*/
 }
 
-header{
-  border-bottom: solid purple;
-  padding: 2%;
+header {
+    border-bottom: solid #f5f5f5;
+    padding: 2%;
+    margin-bottom: 1%;
 }
 
-h1:hover{
-  cursor: pointer;
+h1:hover {
+    cursor: pointer;
 }
 
-h1, h4{
-  margin: 0;
+h1, h4 {
+    margin: 0;
 }
 
-.squad{
-  font-size: 22px;
+.squad {
+    font-size: 22px;
 }
 
-section{
-  padding: 3px;
+section {
+    padding: 3px;
 }
 
-section:hover{
-  color: white;
-  border: solid white;
-  border-radius: 20%;
-  padding: 0px;
+section:hover {
+    /*color: white;*/
+    border: solid #f5f5f5;
+    border-radius: 20%;
+    padding: 0px;
 }
