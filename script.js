@@ -7,11 +7,11 @@ function shuffle(a) {
     return a;
 }
 
-let node = document.createElement("h4");
-let textnode = document.createTextNode("(Click title to sort class)");
-node.appendChild(textnode);
-let element = document.getElementsByTagName("header")[0];
-element.appendChild(node);
+// let node = document.createElement("h4");
+// let textnode = document.createTextNode("(Click title to sort class)");
+// node.appendChild(textnode);
+// let element = document.getElementsByTagName("header")[0];
+// element.appendChild(node);
 // element.insertBefore(node, element.childNodes[2])
 
 document.getElementsByTagName("h1")[0].addEventListener("click", function() {
