@@ -16,7 +16,7 @@ function shuffle(a) {
 
 document.getElementsByTagName("h1")[0].addEventListener("click", function() {
 
-    let wdi = ["alyssa", "anusone", "ara", "clifton", "dara", "david f", "david m", "erik", "jesse", "julie", "matthew", "mason", "neil", "patrick", "rafael", "sandy"];
+    let wdi = ["alyssa", "anusone", "ara", "clifton", "dara", "david", "erik", "jesse", "julie", "matthew", "mason", "neil", "patrick", "rafael", "sandy"];
 
     wdi = shuffle(wdi);
 
